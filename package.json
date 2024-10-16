@@ -6,12 +6,15 @@
   "license": "MIT",
   "author": {
     "name": "Zen",
-    "url": "",
-    "email": ""
+    "url": "https://zenolth.site",
+    "email": "contact@zenolth.site"
+  },
+  "funding": {
+    "url": "https://ko-fi.com/zenolth"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/m4tt72/terminal"
+    "url": "https://github.com/z3n01d/z3n01d.github.io"
   },
   "scripts": {
     "dev": "vite",
