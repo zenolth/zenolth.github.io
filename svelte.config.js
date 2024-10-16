@@ -1,4 +1,5 @@
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
+import adapter from '@sveltejs/adapter-static';
 
 export default {
   // Consult https://svelte.dev/docs#compile-time-svelte-preprocess
@@ -8,7 +9,7 @@ export default {
   kit: {
       adapter: adapter(),
       paths: {
-          base: process.env.NODE_ENV === 'production' ? '/z3n01d.github.io' : '',
+          base: process.env.NODE_ENV === 'production' ? '/sveltekit-github-pages' : '',
       }
   }
 }
