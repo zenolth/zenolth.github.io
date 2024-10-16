@@ -6,9 +6,5 @@ export default defineConfig({
   plugins: [svelte()],
   server: {
     port: 3000,
-  },
-  build: {
-    outDir: './z3n01d.github.io',
-    emptyOutDir: true,
   }
 });
