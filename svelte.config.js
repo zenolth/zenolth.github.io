@@ -9,7 +9,7 @@ export default {
   kit: {
       adapter: adapter(),
       paths: {
-          base: process.env.NODE_ENV === 'production' ? '/sveltekit-github-pages' : '',
+          base: process.env.NODE_ENV === 'production' ? '/z3n01d.github.io' : '',
       }
   }
 }

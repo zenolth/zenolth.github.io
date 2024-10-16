@@ -7,4 +7,8 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  build: {
+    outDir: './z3n01d.github.io',
+    emptyOutDir: true,
+  }
 });
