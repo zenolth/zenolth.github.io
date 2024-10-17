@@ -94,6 +94,25 @@ export const commands: Record<string, (args: string[]) => Promise<string> | stri
 
     return weather.text();
   },
+  quote: async () => {
+    const quote = await fetch("https://quotes-api-self.vercel.app/quote");
+
+    if (!quote.ok) return `Failed to fetch : ${quote.status} ${quote.text()}`;
+
+    const quoteJson = await quote.json();
+
+    return `"${quoteJson.quote} -${quoteJson.author}"`;
+  },
+  joke: async () => {
+
+    const joke = await fetch("https://official-joke-api.appspot.com/jokes/random");
+
+    if (!joke.ok) return `Failed to fetch : ${joke.status} ${joke.text()}`;
+
+    const jokeJson = await joke.json();
+
+    return `${jokeJson.setup} ${jokeJson.punchline}`;
+  },
   exit: () => {
     return 'Please close the tab to exit.';
   },
