@@ -21,7 +21,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "deploy": "npm run build && npx gh-pages -d dist -t true"
+    "deploy": "npm run build && copy .\\CNAME .\\dist\\ && npx gh-pages -d dist -t true"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.1.1",
@@ -33,13 +33,11 @@
     "tailwindcss": "^3.4.10",
     "tslib": "^2.6.3",
     "typescript": "^5.5.4",
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "@sveltejs/adapter-static": "^3.0.5",
+    "gh-pages": "^6.2.0"
   },
   "engines": {
     "node": ">=18.17.0"
-  },
-  "dependencies": {
-    "@sveltejs/adapter-static": "^3.0.5",
-    "gh-pages": "^6.2.0"
   }
 }
