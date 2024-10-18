@@ -21,7 +21,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "deploy": "npm run build && copy .\\CNAME .\\dist\\ && npx gh-pages -d dist -t true"
+    "deploy": "npm run build && copy .\\CNAME .\\dist\\ && copy .\\.well-known .\\dist\\ && npx gh-pages -d dist -t true"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.1.1",
