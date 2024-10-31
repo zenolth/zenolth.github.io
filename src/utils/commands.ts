@@ -137,6 +137,11 @@ export const commands: Record<string, (args: string[]) => Promise<string> | stri
   Experience The Man with a fresh coat of paint and a lot harder to beat AI
   https://modrinth.com/mod/man-from-the-fog-reimagined
   `,
+  discord: () => {
+    window.open("https://discord.gg/pB2tSCkYrU")
+
+    return "Enjoy your stay!"
+  },
   banner: () => `
 ███████╗███████╗███╗   ██╗
 ╚══███╔╝██╔════╝████╗  ██║
