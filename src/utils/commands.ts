@@ -132,11 +132,9 @@ export const commands: Record<string, (args: string[]) => Promise<string> | stri
       return `curl: could not fetch URL ${url}. Details: ${error}`;
     }
   },
-  projects: () => `
-  -= Man From The Fog: Reimagined =-
-  Experience The Man with a fresh coat of paint and a lot harder to beat AI
-  https://modrinth.com/mod/man-from-the-fog-reimagined
-  `,
+  projects: () => `-= Man From The Fog: Reimagined =-
+Experience The Man with a fresh coat of paint and a lot harder to beat AI
+<a class="underline" href="https://modrinth.com/mod/man-from-the-fog-reimagined">https://modrinth.com/mod/man-from-the-fog-reimagined</a>`,
   discord: () => {
     window.open("https://discord.gg/pB2tSCkYrU")
 

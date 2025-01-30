@@ -42,7 +42,7 @@
         const output = await commandFunction(args);
 
         if (commandName !== 'clear') {
-          $history = [...$history, { command, outputs: [output] }];
+          $history = [...$history, { command, outputs: [output], raw: commandName === "projects" }];
         }
       } else {
         const output = `${commandName}: command not found`;
