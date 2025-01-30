@@ -4,7 +4,7 @@
   import Ps1 from './Ps1.svelte';
 </script>
 
-{#each $history as { command, outputs }}
+{#each $history as { command, outputs, raw }}
   <div style={`color: ${$theme.foreground}`}>
     <div class="flex flex-col md:flex-row">
       <Ps1 />
@@ -18,7 +18,11 @@
 
     {#each outputs as output}
       <p class="whitespace-pre">
-        {output}
+        {#if raw}
+          {@html output}
+          {:else}
+          {output}
+        {/if}
       </p>
     {/each}
   </div>
